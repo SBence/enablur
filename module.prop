@@ -1,0 +1,6 @@
+id=enablur
+name=EnaBlur
+version=1.0
+versionCode=1
+author=SBence
+description=Enable SurfaceFlinger blur

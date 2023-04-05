@@ -1,0 +1,23 @@
+name: Build Magisk module
+
+on:
+  push:
+    branches: ["master"]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Upload module file as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: EnaBlur
+          path: |
+            META-INF
+            *.prop
